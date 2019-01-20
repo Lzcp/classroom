@@ -1,0 +1,12 @@
+<p class="header">
+  {{dataMsg.name | uppercase}}
+</p>
+<!-- <input [(ngModel)]='dataMsg.name' placeholder="name"> -->
+<ul>
+  <li *ngFor="let item of headersInformations; let i = index">{{i+1}}-----------{{item.name}}</li>
+</ul>
+<!-- <div class="one"></div> -->
+<textarea style="width: 100px;height: 100px;" (change) = 'event()' [(ngModel)]="name">
+
+</textarea>
+<button (click) = 'event()'>保存</button>
